@@ -58,6 +58,4 @@ pip install numpy pandas matplotlib seaborn pillow scikit-learn tensorflow
 
 ---
 ## ▶️ Running the Code
-bash
-
-python deepfake.py
+<pre> ```bash python deepfake.py ``` </pre>
