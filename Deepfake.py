@@ -75,8 +75,8 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
 
 def main():
     # Paths to real and fake images
-    real_image_path = '/content/drive/MyDrive/Deepfake/casia/CASIA1/Au/Au_ani_0001.jpg'
-    fake_image_path = '/content/drive/MyDrive/Deepfake/casia/CASIA2/Tp/Tp_D_NRN_S_N_ani10171_ani00001_12458.jpg'
+    real_image_path = 'https://drive.google.com/file/d/1SQOw64qo_MwB85U8rKwelsaB6Gj5IDuS/view?usp=drive_link'
+    fake_image_path = 'https://drive.google.com/file/d/1uRSf98c_fZ-1qd1BzIq5iGIx1gW1ZgnI/view?usp=drive_link'
 
     # Load and visualize real and fake images
     Image.open(real_image_path)
@@ -88,7 +88,7 @@ def main():
     X, Y = [], []
     
     # Load real images
-    path_real = '/content/drive/MyDrive/Deepfake/casia/CASIA2/Au'
+    path_real = 'https://drive.google.com/drive/folders/1dOVVqvmXybPIhlNsJPPGkogY850q-heD?usp=drive_link'
     for dirname, _, filenames in os.walk(path_real):
         for filename in filenames:
             if filename.endswith('jpg') or filename.endswith('png'):
@@ -104,7 +104,7 @@ def main():
     Y = Y[:2100]
 
     # Load fake images
-    path_fake = '/content/drive/MyDrive/Deepfake/casia/CASIA2/Tp'
+    path_fake = 'https://drive.google.com/drive/folders/1Mr3VNt7xWSO3hyBgu5NjD2kp6hWj3q_d?usp=drive_link'
     for dirname, _, filenames in os.walk(path_fake):
         for filename in filenames:
             if filename.endswith('jpg') or filename.endswith('png'):
