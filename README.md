@@ -1,4 +1,4 @@
-# 🔍 Deepfake Image Detection using Error Level Analysis (ELA) and CNN
+# Deepfake Image Detection using Error Level Analysis (ELA) and CNN
 
 This project leverages **Error Level Analysis (ELA)** and a **Convolutional Neural Network (CNN)** to detect deepfake images. The approach uses the CASIA dataset, processes images through ELA, and trains a CNN to classify real vs. fake images based on compression artifacts.
 
@@ -41,14 +41,21 @@ Training: 80/20 train-validation split with EarlyStopping
 
 Evaluation: Accuracy, loss, and confusion matrix visualizations
 
+---
+
 ## 📈 Training Performance
 <p align="center"> <img src="screenshots/loss_curve.png" width="400" alt="Loss Curve"/> <img src="screenshots/accuracy_curve.png" width="400" alt="Accuracy Curve"/> </p>
+
+---
 
 ## 🔍 Confusion Matrix
 <p align="center"> <img src="screenshots/confusion_matrix.png" width="350" alt="Confusion Matrix"/> </p>
 
+---
+
 ## 🧪 Requirements
 pip install numpy pandas matplotlib seaborn pillow scikit-learn tensorflow
 
+---
 ## ▶️ Running the Code
 python deepfake.py
